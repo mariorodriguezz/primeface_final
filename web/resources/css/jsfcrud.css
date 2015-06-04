@@ -1,0 +1,150 @@
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a4f54;
+    font-size: 16px;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto 0;
+}
+
+footer {
+    border-top: 1px solid #4e6a71;
+    margin: 0 auto 0 !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: right;
+    width: 95%;
+}
+
+section {
+    margin: 0 auto 0 !important;
+    width: 90%;
+}
+
+.title {    
+    margin: 0 auto 0 !important;
+    width: 90%;
+}
+
+a.button{
+    background-color: #4e6a71;
+    border-radius: 4px;
+    color: #FFF !important;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.logo {
+    background: url('/TvShop/resources/img/tv-shop.jpg') no-repeat;
+    background-size: 73px 61px;
+    height: 61px;
+    width: 73px;
+    margin: 10px 0px;
+}
+
+nav {
+    background: #4e6a71;
+    border-radius: 4px;
+    height: auto;
+    list-style: none;
+    padding-left: 15px;
+}
+
+nav li {
+    display: inline-block;
+    height: 20px;
+    margin: 0 auto 0 !important;
+    padding: 10px 0px;
+}
+
+nav li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 15px 2px 10px;
+    border-right: 1px #fefeff solid;
+}
+
+nav li a:hover {
+    color: #b2d5d6;
+}
+
+a {
+    color: #4e6a71;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table {
+    empty-cells: show;
+}
+
+form.jsfcrud_list_form th, td th {
+    font-size: x-small;
+    color: #4e6a71;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #90b4bd;
+    border-right-color: #90b4bd;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #b2d5d6;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 8px;
+    font-size: small;
+}
+
+form.jsfcrud_list_form td, td td {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #b2d5d6;
+    border-right-color: #b2d5d6;
+    vertical-align: baseline;
+    padding-bottom: 0px;
+}
+
+tr.jsfcrud_odd_row {
+    background-color: #fefeff;
+    color: #4e6a71;
+}
+
+
+tr.jsfcrud_even_row {
+    background-color: #eff5fa;
+    color: #4e6a71;
+}
+
+#busyImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

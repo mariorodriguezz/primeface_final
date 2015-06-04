@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditClienteTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="head">
+            <section>
+            <h:outputText value="#{bundle.EditClienteTitle}"></h:outputText>
+            </section>
+        </ui:define>
+        <ui:define name="body">
+            <section>
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditClienteLabel_nombres}" for="nombres" />
+                    <h:inputText id="nombres" value="#{clienteController.selected.nombres}" title="#{bundle.EditClienteTitle_nombres}" />
+                    <h:outputLabel value="#{bundle.EditClienteLabel_apellidos}" for="apellidos" />
+                    <h:inputText id="apellidos" value="#{clienteController.selected.apellidos}" title="#{bundle.EditClienteTitle_apellidos}" />
+                    <h:outputLabel value="#{bundle.EditClienteLabel_identificacion}" for="identificacion" />
+                    <h:inputText id="identificacion" value="#{clienteController.selected.identificacion}" title="#{bundle.EditClienteTitle_identificacion}" />
+                    <h:outputLabel value="#{bundle.EditClienteLabel_direccion}" for="direccion" />
+                    <h:inputText id="direccion" value="#{clienteController.selected.direccion}" title="#{bundle.EditClienteTitle_direccion}" />
+                    <h:outputLabel value="#{bundle.EditClienteLabel_telefono}" for="telefono" />
+                    <h:inputText id="telefono" value="#{clienteController.selected.telefono}" title="#{bundle.EditClienteTitle_telefono}" />
+                </h:panelGrid>
+                <h:commandLink class="button" action="#{clienteController.update}" value="#{bundle.EditClienteSaveLink}"/>
+                <br />
+                <br />
+                <a class="" href="listado.xhtml">Lista</a>
+            </h:form>
+            </section>
+        </ui:define>
+    </ui:composition>
+
+</html>
